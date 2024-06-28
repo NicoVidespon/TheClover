@@ -3,15 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #aaba78;
 }
 
 header {
+    width: 100%;
     background-color: #fbec88;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -26,36 +28,27 @@ header {
     border: solid #aaba78;
 }
 
-
 nav ul li a:hover {
     background-color: #3a7d44;
-    border: solid 2px white;
+    border: solid 2px black;
     transition: 1s;
 }
 
 h1 {
     text-align: center;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #f0ca6a;
     height: 200px;
     font-size: 50px;
 }
 
 .h1Secundario {
-    background-color: #1e4f2a;
+    background-color: #f0ca6a;
     height: 50px;
 }
 
-.h1Contacto {
-    background-image: url(../assets/images/lugar-bar.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-}
-
 h2 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -66,7 +59,7 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: black;
     margin-left: 20px;
 }
 
@@ -74,34 +67,8 @@ p {
     color: black;
     margin: 10px;
     padding: 10px;
-}
-
-.galeriaSection {
-    margin-bottom: 40px;
-}
-
-.galeriaContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.galeriaContainer img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-form {
-    background-color: #fbec88;
-    color: white;
-    margin: 10px;
-    padding: 40px;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 footer {
@@ -115,55 +82,10 @@ footer {
     margin: 10px;
 }
 
-.nosotrosContainer {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-areas:
-        "articulo1"
-        "imagen"
-        "articulo2"
-    ;
-}
-
-#a1 {
-    grid-area: articulo1;
-}
-
-#a2 {
-    grid-area: imagen;
-}
-
-#a3 {
-    grid-area: articulo2;
-}
-
-@media(min-width:1200px) {
-    body{
-        background-color: #aaba78;
-    }
-    
-    header {
-        background-color: #fbec88;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .logo {
-        border-radius: 30px;
-        width: 60px;
-        margin: 30px;
-        border: solid black 2px;
-        transition: 1s;
-    }
-    
-    .logo:hover {
-        border: solid #1e4f2a 2px;
-    }
+@media (min-width: 768px) {   
     nav ul {
         display: flex;
-        margin: 30px;
+        margin: 5px;
     }
 
     nav ul li {
@@ -172,11 +94,11 @@ footer {
     }
 
     nav ul li a {
-        color: black;
-        font-size: 20px;
+        color:  black;
+        font-size: 15px;
         text-decoration: none;
         border-radius: 10px;
-        margin: 10px;
+        margin: 15px;
         padding: 10px;
         background-color: #aaba78;
         border: solid 2px black;
@@ -190,11 +112,8 @@ footer {
     }
 
     h1 {
-        text-align: center;
-        color: white;
         background-color: black;
-        height: 200px;
-        font-size: 50px;
+        color: black;
     }
 
     .h1Secundario {
@@ -202,92 +121,52 @@ footer {
         height: 50px;
     }
 
-    .h1Contacto {
-        background-image: url(../assets/images/lugar-bar.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 400px;
-    }
-
-    h2 {
-        color: white;
-        text-align: center;
-    }
-
     .h2Header {
-        font-size: 70px;
-        color: black;
-        text-decoration: underline;
-    }
-
-    h3 {
-        color: white;
+        font-size: 20px;
     }
 
     p {
         font-size: 20px;
-        color: black;
-        margin: 10px;
-        padding: 10px;
     }
+}
 
-    .galeriaSection {
-        margin-bottom: 40px;
-    }
-
-    .galeriaContainer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .galeriaContainer img {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-        border: 2px solid black;
+@media (min-width: 1200px) {
+    
+    nav ul li a {
+        color:  black;
+        font-size: 20px;
+        text-decoration: none;
         border-radius: 10px;
-        transition: transform 0.3s;
+        margin: 20px;
+        padding: 10px;
+        background-color: #aaba78;
+        border: solid 2px black;
+        transition: 1s;
     }
 
-    form {
-        background-color: #fbec88;
-        color: white;
-        margin: 10px;
-        padding: 40px;
-        text-align: center;
+    nav ul li a {
+        color: black;
     }
 
-    footer {
-        text-align: center;
-        background-color: #fbec88;
-        height: 80px;
+    nav ul li a:hover {
+        background-color: #f0ca6a;
     }
 
-    .logoRedes {
-        width: 50px;
-        margin: 10px;
+    h1 {
+        background-color: black;
+        color: black;
     }
 
-    .nosotrosContainer {
-        display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
-        grid-template-areas:
-            "articulo1 imagen articulo2"
-        ;
+    .h1Secundario {
+        background-color: #1e4f2a;
+        height: 50px;
     }
 
-    #a1 {
-        grid-area: articulo1;
+    .h2Header {
+        font-size: 70px;
     }
 
-    #a2 {
-        grid-area: imagen;
-    }
-
-    #a3 {
-        grid-area: articulo2;
+    p {
+        font-size: 20px;
     }
 }
