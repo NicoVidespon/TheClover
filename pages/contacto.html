@@ -13,46 +13,59 @@
 </head>
 
 <body class="container-fluid p-0">
-    <header>
-        <logo><a href="../index.html"><img class="logo" src="../assets/images/logo.jpg" alt="Logo de thecloverbar"></a>
-        </logo>
-        <h2 class="h2Header">The Clover Bar</h2>
-        <nav>
-            <ul>
-                <li><a href="nosotros.html">Sobre nosotros</a></li>
-                <li><a href="menú.html">Menú</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <header class="w-100">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid w-100">
+                <a class="navbar-brand" href="#">
+                    <logo><a href="../index.html"><img class="logo" src="../assets/images/logo.jpg"
+                                alt="Logo de The Clover Bar"></a></logo>
+                </a>
+                <h2 class="h2Header">The Clover Bar</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="menú.html">Menú</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <h1 class="h1Contacto">Contacto</h1>
         <section class="row">
-            <article class="col-12 col-md-6 col-xl-3">
+            <article class="col-md-6 col-xl-6">
                 <h2>Comunícate con nosotros</h2>
                 <form method="POST">
-                    <label for="nombreYapellido">Nombre y apellido</label>
+                    <label for="nombreYapellido">Nombre y apellido</label><br>
                     <input type="text" name="nombreYapellido" placeholder="NOMBRE Y APELLIDO *" required>
                     <br><br>
-                    <label for="email">Email</label>
+                    <label for="email">Email</label><br>
                     <input type="email" name="email" placeholder="EMAIL *" required>
                     <br><br>
-                    <label for="asunto">Asunto</label>
+                    <label for="asunto">Asunto</label><br>
                     <input type="text" name="asunto" placeholder="ASUNTO *" required>
                     <br><br>
-                    <textarea rows="10" cols="50" name="mensaje" placeholder="MENSAJE *" required></textarea>
+                    <textarea rows="10" cols="40" name="mensaje" placeholder="MENSAJE *" required></textarea>
                     <br><br>
-                    <input type="submit" name="enviar">
+                    <input class="enviar" type="submit" name="enviar">
                 </form>
             </article>
-            <article class="col-12 col-md-6 col-xl-3">
+            <article class="col-md-6 col-xl-6">
                 <h2>Nos encontramos en...</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.280776847308!2d-60.515863724321626!3d-33.15425487350828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b70bc1cf156ec3%3A0xab8ef7dc5ff692b1!2sTHE%20CLOVER%20BAR!5e0!3m2!1ses-419!2sar!4v1717458795014!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.280776847308!2d-60.515863724321626!3d-33.15425487350828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b70bc1cf156ec3%3A0xab8ef7dc5ff692b1!2sTHE%20CLOVER%20BAR!5e0!3m2!1ses-419!2sar!4v1717458795014!5m2!1ses-419!2sar"
+                        width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </article>
+            
         </section>
     </main>
     <footer>

@@ -17,3 +17,26 @@ form {
     padding: 40px;
     text-align: center;
 }
+label{
+    font-size: 20px;
+}
+.enviar{
+    background-color: #aaba78;
+    padding: 10px 20px;
+    border: solid 2px;
+    transition: 1s;
+    border-radius: 5px;
+}
+.enviar:hover{
+    background-color: #fbec88;
+    border: solid 2px;
+    transition: 1s;
+    border-radius: 5px;
+    
+}
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 10px;
+}
