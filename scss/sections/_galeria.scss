@@ -1,4 +1,3 @@
-
 .galeriaSection {
     margin-bottom: 40px;
 }
@@ -11,10 +10,23 @@
 }
 
 .galeriaContainer img {
+    box-shadow: 0 10px 20px black; width: 100%;
     width: 300px;
     height: 200px;
     object-fit: cover;
     border: 2px solid black;
     border-radius: 10px;
     transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.galeriaImg {
+    width: 100%;
+}
+
+img {
+    margin: 20px;
 }

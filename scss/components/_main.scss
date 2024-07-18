@@ -1,0 +1,42 @@
+main {
+    overflow-x: hidden;
+}
+
+#h1Primario {
+    display: flex;
+    justify-content: center;
+    color: $color-principal;
+    background-image: linear-gradient($color-secundario, $color-principal);
+    height: 150px;
+    font-size: 50px;
+}
+
+.h1Secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: $color-principal;
+    background-color: black;
+    height: 80px;
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}

@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio dedicado a el bar The Clover de Arroyo Seco, Santa Fe">
+    <meta name="keywords"
+        content="bar, menú, merienda, cena, desayuno, almuerzo, pizza, hamburguesa, picada, papas, carlitos, comida, arroyo seco, santa fe, bebida, trago, the clover, cloverbar">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/icons/trebol.png">
-    <title>TheClover</title>
+    <title>TheClover - Menú</title>
 </head>
 
 <body class="container-fluid p-0">
     <header class="w-100">
-        <nav class="navbar navbar-expand-md ">
-            <div class="container-fluid w-100">
-                <a class="navbar-brand" href="#">
-                    <logo><a href="../index.html"><img class="logo" src="../assets/images/logo.jpg"
-                                alt="Logo de The Clover Bar"></a></logo>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../assets/images/logo.jpg" alt="Logo de The Clover Bar">
                 </a>
                 <h2 class="h2Header">The Clover Bar</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,11 +27,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li><a href="nosotros.html">Sobre nosotros</a></li>
-                        <li><a href="menú.html">Menú</a></li>
-                        <li><a href="galeria.html">Galería</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menú.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,44 +39,65 @@
     </header>
     <main>
         <h1 class="h1Secundario">Menú</h1>
-        <section class="row">
-            <article class="col col-md-3 col-xl-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rerum repellat a laborum corporis ipsa
-                    nisi illum pariatur excepturi, tempore, ducimus dolor totam numquam odio error natus hic! Sint ipsa
-                    vel enim distinctio facere suscipit ab sapiente accusantium, tempora quidem reprehenderit animi
-                    blanditiis accusamus iure voluptatem voluptatum veritatis dolorem, soluta voluptates inventore
-                    perspiciatis iste nostrum? Voluptas illum cum est consequuntur ea ratione reiciendis sint, ex error
-                    explicabo amet ipsa velit recusandae odit eaque accusantium deserunt praesentium architecto, dolorum
-                    fuga nulla sed! Explicabo optio libero quia, harum architecto quisquam consectetur, non illo amet
-                    commodi in ipsum quod dignissimos tenetur+
-                </p>
+        <section>
+            <article class="row">
+                <div class="col-12 col-md-3 col-xl-3">
+                    <h3>Entradas</h3>
+                    <p>- Bruschetta clásica con tomate, albahaca y un toque de ajo.</p>
+                    <p>- Calamares a la romana servidos con una salsa tártara casera.</p>
+                    <p>- Rabas con nuestra salsa especial.</p>
+                </div>
+                <div class="col-12 col-md-3 col-xl-3">
+                    <h3>Platos Principales</h3>
+                    <p>- Pizza artesanal con una base crujiente y una variedad de toppings, desde la clásica Margherita
+                        hasta la exótica Hawaiana.</p>
+                    <p>- Hamburguesas gourmet hechas con carne 100% de res, acompañadas de papas fritas doradas y
+                        crujientes.</p>
+                </div>
+                <div class="col-12 col-md-3 col-xl-3">
+                    <h3>Bebidas</h3>
+                    <p>- Cócteles innovadores y clásicos, como mojitos, margaritas y gin-tonics.</p>
+                    <p>- Cervezas artesanales locales e importadas.</p>
+                    <p>- Vinos seleccionados de las mejores bodegas.</p>
+                    <p>- Fernet Branca</p>
+                </div>
+                <div class="col-12 col-md-3 col-xl-3">
+                    <h3>Postres</h3>
+                    <p>- Tarta de queso con frutas del bosque.</p>
+                    <p>- Brownie de chocolate servido con helado de vainilla.</p>
+                    <p>- Flan casero con dulce de leche.</p>
+                    <p>- Helado con variedad de gustos.</p>
+                </div>
             </article>
-            <article class="col col-md-3 col-xl-3">
-                <img width="300px" src="../assets/images/pizza-bar.jpeg" alt="Foto de pizza">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil unde voluptate optio voluptates
-                    qui beatae fuga, est aliquam dolores eveniet itaque officiis consectetur quibusdam ut maiores velit
-                    fugit possimus quia eius quaerat atque quo perferendis. Voluptas, nihil fugit. Quisquam accusamus
-                    ducimus id excepturi vitae, adipisci molestias doloremque ea animi!
-                </p>
-            </article>
-            <article class="col col-md-3 col-xl-3">
-                <img width="300px" src="../assets/images/picada-bar.jpeg" alt="Foto de picada">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil unde voluptate optio voluptates
-                    qui beatae fuga, est aliquam dolores eveniet itaque officiis consectetur quibusdam ut maiores velit
-                    fugit possimus quia eius quaerat atque quo perferendis. Voluptas, nihil fugit. Quisquam accusamus
-                    ducimus id excepturi vitae, adipisci molestias doloremque ea animi!
-                </p>
-            </article>
-            <article class="col col-md-3 col-xl-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta error perspiciatis deleniti, veniam in
-                    consequatur magni accusamus! Incidunt, amet sapiente, inventore in facere mollitia quidem beatae
-                    unde minima ipsa, alias dolorem! Ab nobis assumenda, deserunt libero molestias alias consequatur
-                    laboriosam rem est, rerum aliquam ratione animi culpa ipsam a perferendis, accusamus id qui quis
-                    laudantium numquam deleniti molestiae eos doloribus! Dolor dolores, ipsa voluptates asperiores
-                    consequuntur mollitia sed praesentium illum earum totam. Cum deserunt in blanditiis harum, facilis
-                    nulla ipsum fugit distinctio voluptatibus sit, expedita temporibus. Aut perferendis accusamus quod
-                    impedit,
-                </p>
+            <article class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <img class="img-fluid object-fit-contain" width="100%"
+                        style="margin: 0;margin-top: 20px;box-shadow: 0 10px 20px black;"
+                        src="../assets/images/pizza-bar.jpeg" alt="Foto de pizza">
+                    <p> Los ingredientes frescos, como tomates jugosos, albahaca aromática y queso derretido, se
+                        destacan en
+                        esta presentación. Es el plato perfecto para compartir con amigos y disfrutar de la noche.</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h3>Especialidades de la Casa</h3>
+                    <p>- Milanesa a la napolitana: una jugosa milanesa de carne o pollo, cubierta con salsa de tomate,
+                        jamón, queso y orégano, servida con papas fritas.</p>
+                    <p>- Empanadas: una selección de empanadas caseras con diferentes rellenos, desde carne hasta queso
+                        y
+                        cebolla.</p>
+                    <p>- Ensalada César: una ensalada fresca y crujiente con lechuga romana, crotones, queso parmesano y
+                        aderezo César, con opción de agregar pollo a la parrilla.</p>
+                    <p>- Picadas variadas con una selección de quesos, embutidos, aceitunas y panes frescos.</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <img class="img-fluid object-fit-contain" width="100%"
+                        style="margin: 0;margin-top: 20px;box-shadow: 0 10px 20px black;"
+                        src="../assets/images/picada-bar.jpeg" alt="Foto de picada">
+                    <p> Incluye una selección quesos finos, embutidos, aceitunas y panes artesanales. La picada es
+                        perfecta
+                        para acompañar con una
+                        copa de vino o una cerveza artesanal, convirtiéndola en la opción ideal.</p>
+                </div>
             </article>
         </section>
     </main>

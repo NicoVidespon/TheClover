@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secundario;
+    height: 80px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.logoRedes {
+    width: 50px;
+    margin: 10px;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

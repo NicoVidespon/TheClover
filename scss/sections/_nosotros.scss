@@ -1,0 +1,34 @@
+.nosotrosContainer {
+    display: grid;
+    grid-template-areas:
+        "articulo1"
+        "imagen1"
+        "imagen2"
+        "articulo2";
+}
+
+#a1 {
+    grid-area: articulo1;
+}
+
+#i1 {
+    grid-area: imagen1;
+}
+
+#i2 {
+    grid-area: imagen2;
+}
+
+#a3 {
+    grid-area: articulo2;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
