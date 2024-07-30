@@ -77,22 +77,31 @@
     }
 
     p {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .pIndex{
+        font-size: 22px;
     }
 
     .nosotrosContainer {
-        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 1.5fr 2fr;
         grid-template-areas:
             "articulo1 imagen1 articulo2"
             "articulo1 imagen2 articulo2";
+    }
+
+    form{
+        margin: 50px 100px;
     }
 
     .mapa-container {
         box-shadow: 0 10px 20px black;
         display: flex;
         justify-content: center;
-        margin: 10px;
-        height: 92%;
+        margin: 50px;
+        margin-top: 100px;
+        height: 70%;
     }
 
     iframe {
